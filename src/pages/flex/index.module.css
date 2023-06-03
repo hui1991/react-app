@@ -1,0 +1,30 @@
+.flexLayout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.itemLayout {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.item {
+  padding: 2px 14px;
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 30px;
+}
+
+.itemSelect {
+  color: red;
+  padding: 2px 14px;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 30px;
+}

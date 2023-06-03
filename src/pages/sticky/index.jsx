@@ -1,8 +1,19 @@
 
+import { useEffect } from 'react'
 import './index.css'
 
 
 function Sticky() {
+  useEffect(() => {
+    const obj = {
+      name: "123",
+      age: "345",
+      test: "test"
+    }
+    const { test, ...reset } = obj
+    console.log(test)
+    console.log(reset)
+  }, [])
   return (
     <div>
       <dl>

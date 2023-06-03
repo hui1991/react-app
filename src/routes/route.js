@@ -1,7 +1,10 @@
 
 import App from "../App"
 import ErrorPage from "../error-page"
-import Sticky from "../page/sticky/index"
+import Dropdown from "../pages/dropdown"
+import Sticky from "../pages/sticky/index"
+import UseEffectTest from "../pages/use-effect/index"
+import Flex from "../pages/flex/index"
 
 const roots = [
   {
@@ -12,6 +15,21 @@ const roots = [
   {
     path: "/sticky",
     element: <Sticky />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/use-effect",
+    element: <UseEffectTest />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/dropdown",
+    element: <Dropdown />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/flex",
+    element: <Flex />,
     errorElement: <ErrorPage />,
   },
 ]
