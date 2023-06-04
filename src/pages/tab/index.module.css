@@ -1,0 +1,39 @@
+.tabLayout {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  overflow-y: hidden;
+  height: 500px;
+}
+
+.menuLayout{
+  overflow-y: scroll;
+  height: 100%;
+  scrollbar-width: none;
+}
+
+.menuItem{
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+.menuItemSelect{
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.contentLayout{
+  flex-grow: 1;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
