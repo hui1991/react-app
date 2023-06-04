@@ -12,19 +12,64 @@ const mockMenuList = getMockMenuList();
 
 const TabDemo = () => {
 
-  const [content,setContent] = useState(0);
+  const [content, setContent] = useState(0);
 
   const onSelect = (value) => {
     setContent(value?.index);
   };
 
   return (
-    <Tab
-      menu={mockMenuList}
-      onSelect={onSelect}
-    >
-      {content}
-    </Tab>
+    <div className={styles.tabDemo}>
+      <div className={styles.upContentLayout}>
+        <div>
+          title
+        </div>
+        <div className={styles.upContent}>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+          <div>
+            upContent
+          </div>
+
+        </div>
+      </div>
+      <Tab
+        menu={mockMenuList}
+        onSelect={onSelect}
+      >
+        {content}
+      </Tab>
+
+
+    </div>
   )
 }
 

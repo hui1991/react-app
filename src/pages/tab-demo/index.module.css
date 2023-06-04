@@ -1,0 +1,29 @@
+
+.tabDemo{
+  height: 500px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.upContentLayout{
+  width: inherit;
+}
+
+.upContent{
+  width: 100%;
+  background-color: aquamarine;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+.downContent{
+  flex-grow: 1;
+  height: 0;
+  width: 100%;
+}
