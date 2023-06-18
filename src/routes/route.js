@@ -6,6 +6,7 @@ import Sticky from "../pages/sticky/index"
 import UseEffectTest from "../pages/use-effect/index"
 import Flex from "../pages/flex/index"
 import TabDemo from "../pages/tab-demo/index"
+import Array from "../pages/array/index"
 
 const roots = [
   {
@@ -36,6 +37,11 @@ const roots = [
   {
     path: "/tab",
     element: <TabDemo />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/array",
+    element: <Array />,
     errorElement: <ErrorPage />,
   },
 ]
