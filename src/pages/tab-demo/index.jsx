@@ -24,6 +24,9 @@ const TabDemo = () => {
         <div>
           title
         </div>
+
+      </div>
+      <div>
         <div className={styles.upContent}>
           <div>
             upContent
@@ -56,7 +59,7 @@ const TabDemo = () => {
             upContent
           </div>
           <div>
-            upContent
+            upContents
           </div>
 
         </div>
