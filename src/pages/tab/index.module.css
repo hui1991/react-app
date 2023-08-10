@@ -1,6 +1,6 @@
 .tabLayout {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: stretch;
   width: 100%;
   overflow-y: hidden;

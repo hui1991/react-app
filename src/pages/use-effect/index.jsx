@@ -6,41 +6,27 @@ import './index.css'
  */
 const UseEffectTest = () => {
 
-  const [payload, setPayload] = useState({
-    pageNumber: 1,
-    pageSize: 10,
-  })
+  const [pageNumber, setPageNumber] = useState(1)
 
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    console.log(`[payload] useEffect invoke payload = ${JSON.stringify(payload)}`)
-  }, [payload])
-
-  const arr = [1,2,3]
+    console.log('useEffect', `依赖项是数组时 payload = ${pageNumber}`)
+    return () => {
+      console.log('useEffect', '组件卸载或依赖项改变时执行')
+    }
+  }, [pageNumber])
 
   useEffect(() => {
-    console.log('[] useEffect invoke')
-    arr.map((item,index)=>{
-      console.log('[] useEffect invoke')
-      console.log('[] useEffect')
-    })
+    console.log('useEffect', '依赖项是空数组 []')
   }, [])
 
   useEffect(() => {
-    console.log('useEffect invoke')
+    console.log('useEffect', '没有依赖项 组件每次渲染都会执行')
   })
 
   const handlePageNumberClick = () => {
-    setPayload({ ...payload, pageNumber: payload.pageNumber + 1 })
-  }
-
-  const handlePageSizeClick = () => {
-    setPayload({ ...payload, pageSize: payload.pageSize + 10 })
-  }
-
-  const reset = () => {
-    setPayload({ pageNumber: 1, pageSize: 10 })
+    setPageNumber(pageNumber + 1 )
   }
 
   const handleCountClick = () => {
@@ -48,16 +34,10 @@ const UseEffectTest = () => {
   }
 
   return (
-    <div>
+    <div className="useEffectContext">
       <h1>useEffect测试</h1>
       <button onClick={handlePageNumberClick}>
-        pageNumber+
-      </button>
-      <button onClick={handlePageSizeClick}>
-        pageSize+
-      </button>
-      <button onClick={reset}>
-        重置
+        依赖项是数组
       </button>
       <button onClick={handleCountClick}>
         {count}
@@ -65,7 +45,5 @@ const UseEffectTest = () => {
     </div>
   )
 }
-
-
 
 export default UseEffectTest

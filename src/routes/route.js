@@ -1,5 +1,4 @@
 
-import App from "../App"
 import ErrorPage from "../error-page"
 import Dropdown from "../pages/dropdown"
 import Sticky from "../pages/sticky/index"
@@ -7,11 +6,13 @@ import UseEffectTest from "../pages/use-effect/index"
 import Flex from "../pages/flex/index"
 import TabDemo from "../pages/tab-demo/index"
 import Array from "../pages/array/index"
+import Center from "../pages/center/index"
+import Home from "../pages/home"
 
 const roots = [
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
@@ -42,6 +43,11 @@ const roots = [
   {
     path: "/array",
     element: <Array />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/center",
+    element: <Center />,
     errorElement: <ErrorPage />,
   },
 ]

@@ -1,0 +1,37 @@
+.center1 {
+  height: 50px;
+  margin: 15px;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+.center2 {
+  height: 50px;
+  margin: 15px;
+  background-color: #F2F2F2;
+  text-align: center;
+  line-height: 50px;
+}
+
+.center3 {
+  height: 50px;
+  margin: 15px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center4 {
+  position: relative;
+  height: 50px;
+  margin: 15px;
+  background-color: #F2F2F2;
+}
+
+.center41 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
