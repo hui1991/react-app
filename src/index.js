@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import roots from "./routes/route";
-
+import './index.css';
+import 'normalize.css'
 
 const router = createBrowserRouter(roots);
 
