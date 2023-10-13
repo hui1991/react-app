@@ -1,5 +1,5 @@
-import styles from './index.module.css'
-import { useNavigate } from 'react-router-dom'
+import styles from './index.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const homeList = [
   {
@@ -30,13 +30,12 @@ const homeList = [
     content: 'array',
     path: '/array',
   },
-]
+];
 
 /**
  * 首页
  */
 function Home() {
-
   const navigate = useNavigate();
 
   const renderItem = (content, path, index) => {
@@ -44,19 +43,20 @@ function Home() {
       <div
         key={index}
         className={styles.homeListItem}
-        onClick={() => { navigate(path) }}
+        onClick={() => {
+          navigate(path);
+        }}
       >
         {content}
       </div>
-    )
-  }
-  return (
-    <div className={styles.homeLayout}>
-      {
-        homeList.map((item, index) => (renderItem(item?.content, item?.path, index)))
-      }
-    </div>
-  )
+    );
+  };
+
+  const renderHomeList = () => {
+    homeList.map((item, index) => renderItem(item?.content, item?.path, index));
+  };
+
+  return <div className={styles.homeLayout}>{renderHomeList()}</div>;
 }
 
-export default Home
+export default Home;
