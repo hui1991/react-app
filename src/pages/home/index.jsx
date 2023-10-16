@@ -30,6 +30,10 @@ const homeList = [
     content: 'array',
     path: '/array',
   },
+  {
+    content: 'test',
+    path: '/test',
+  },
 ];
 
 /**
@@ -53,7 +57,9 @@ function Home() {
   };
 
   const renderHomeList = () => {
-    homeList.map((item, index) => renderItem(item?.content, item?.path, index));
+    return homeList.map((item, index) =>
+      renderItem(item?.content, item?.path, index)
+    );
   };
 
   return <div className={styles.homeLayout}>{renderHomeList()}</div>;

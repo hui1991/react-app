@@ -1,58 +1,60 @@
-
-import ErrorPage from "../error-page"
-import Dropdown from "../pages/dropdown"
-import Sticky from "../pages/sticky/index"
-import UseEffectTest from "../pages/use-effect/index"
-import Flex from "../pages/flex/index"
-import TabDemo from "../pages/tab-demo/index"
-import Array from "../pages/array/index"
-import Center from "../pages/center/index"
-import Home from "../pages/home"
+import ErrorPage from '../error-page';
+import Dropdown from '../pages/dropdown';
+import Sticky from '../pages/sticky/index';
+import UseEffectTest from '../pages/use-effect/index';
+import Flex from '../pages/flex/index';
+import TabDemo from '../pages/tab-demo/index';
+import Array from '../pages/array/index';
+import Center from '../pages/center/index';
+import Home from '../pages/home';
+import Test from '../pages/test';
 
 const roots = [
   {
-    path: "/",
+    path: '/',
     element: <Home />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/sticky",
+    path: '/sticky',
     element: <Sticky />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/use-effect",
+    path: '/use-effect',
     element: <UseEffectTest />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/dropdown",
+    path: '/dropdown',
     element: <Dropdown />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/flex",
+    path: '/flex',
     element: <Flex />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tab",
+    path: '/tab',
     element: <TabDemo />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/array",
+    path: '/array',
     element: <Array />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/center",
+    path: '/center',
     element: <Center />,
     errorElement: <ErrorPage />,
   },
-]
+  {
+    path: '/test',
+    element: <Test />,
+    errorElement: <ErrorPage />,
+  },
+];
 
-export default roots
-
-
-
+export default roots;
