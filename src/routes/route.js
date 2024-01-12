@@ -8,6 +8,7 @@ import Array from '../pages/array/index';
 import Center from '../pages/center/index';
 import Home from '../pages/home';
 import Test from '../pages/test';
+import Modal from '../pages/modal/index';
 
 const roots = [
   {
@@ -53,6 +54,11 @@ const roots = [
   {
     path: '/test',
     element: <Test />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/modal',
+    element: <Modal />,
     errorElement: <ErrorPage />,
   },
 ];

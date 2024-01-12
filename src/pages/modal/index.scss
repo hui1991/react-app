@@ -1,0 +1,33 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-modal-button {
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  background: white;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.example-modal-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+
+  p {
+    text-align: center;
+  }
+}

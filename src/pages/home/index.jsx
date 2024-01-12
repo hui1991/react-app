@@ -34,6 +34,10 @@ const homeList = [
     content: 'test',
     path: '/test',
   },
+  {
+    content: 'modal',
+    path: '/modal',
+  },
 ];
 
 /**
