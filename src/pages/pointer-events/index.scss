@@ -1,0 +1,28 @@
+.scroll-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.scroll-page-container {
+  height: 200vh;
+  margin-left: 30px;
+}
+
+.bottom-mask {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 40vh;
+  background: rgba($color: #000, $alpha: 0.3);
+}
+
+.botton {
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  background: #722ed1;
+  border-radius: 8px;
+  text-align: center;
+  margin: 100px 0;
+}

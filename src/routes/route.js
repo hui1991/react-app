@@ -9,6 +9,7 @@ import Center from '../pages/center/index';
 import Home from '../pages/home';
 import Test from '../pages/test';
 import Modal from '../pages/modal/index';
+import PointerEvents from '../pages/pointer-events/index';
 
 const roots = [
   {
@@ -59,6 +60,11 @@ const roots = [
   {
     path: '/modal',
     element: <Modal />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/pointerEvents',
+    element: <PointerEvents />,
     errorElement: <ErrorPage />,
   },
 ];

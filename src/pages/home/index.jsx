@@ -1,5 +1,5 @@
-import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
+import './index.scss';
 
 const homeList = [
   {
@@ -38,6 +38,10 @@ const homeList = [
     content: 'modal',
     path: '/modal',
   },
+  {
+    content: '滚动穿透',
+    path: '/pointerEvents',
+  },
 ];
 
 /**
@@ -50,7 +54,7 @@ function Home() {
     return (
       <div
         key={index}
-        className={styles.homeListItem}
+        className="home-list-item"
         onClick={() => {
           navigate(path);
         }}
@@ -66,7 +70,7 @@ function Home() {
     );
   };
 
-  return <div className={styles.homeLayout}>{renderHomeList()}</div>;
+  return <div className="home-layout">{renderHomeList()}</div>;
 }
 
 export default Home;
