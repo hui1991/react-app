@@ -42,6 +42,10 @@ const homeList = [
     content: '滚动穿透',
     path: '/pointerEvents',
   },
+  {
+    content: '抽奖转盘',
+    path: '/prizeWheel',
+  },
 ];
 
 /**

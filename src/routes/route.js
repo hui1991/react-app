@@ -10,6 +10,7 @@ import Home from '../pages/home';
 import Test from '../pages/test';
 import Modal from '../pages/modal/index';
 import PointerEvents from '../pages/pointer-events/index';
+import PrizeWheel from '../pages/prize-wheel/index';
 
 const roots = [
   {
@@ -65,6 +66,11 @@ const roots = [
   {
     path: '/pointerEvents',
     element: <PointerEvents />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/prizeWheel',
+    element: <PrizeWheel />,
     errorElement: <ErrorPage />,
   },
 ];
