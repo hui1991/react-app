@@ -1,4 +1,3 @@
-
 /**
  * 对比版本号
  */
@@ -18,3 +17,18 @@ export const compareVersion = (version1, version2) => {
   }
   return 0;
 };
+
+/**
+ * 截取带emoji的字符串
+ */
+export function truncated(str, num) {
+  let s = '';
+  for (let v of str) {
+    s += v;
+    num--;
+    if (num <= 0) {
+      break;
+    }
+  }
+  return s;
+}
