@@ -30,3 +30,18 @@ export function replaceOrPushArray(array, newArray, comparekey) {
 export function max(array) {
   return Math.max.apply(null, array);
 }
+
+/**
+ * 移动数组中指定元素到首位
+ */
+export function arrayMoveElementsToTop(source, predicate) {
+  const index = source.findIndex(predicate);
+  // 如果元素存在于数组中
+  if (index > -1) {
+    // 将元素从原位置删除并插入到数组的第一位
+    const move = source.splice(index, 1);
+    source.unshift(move[0]);
+  } else {
+    console.log('数组中未找到指定元素。');
+  }
+}
