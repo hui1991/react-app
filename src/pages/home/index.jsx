@@ -46,6 +46,10 @@ const homeList = [
     content: '抽奖转盘',
     path: '/prizeWheel',
   },
+  {
+    content: 'shape',
+    path: '/clip-path-shape',
+  },
 ];
 
 /**

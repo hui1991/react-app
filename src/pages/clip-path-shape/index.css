@@ -1,0 +1,22 @@
+.shape-clip-path-page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hexagon-6-point {
+  width: 200px;
+  aspect-ratio: 0.866;
+  margin-top: 50px;
+  background: radial-gradient(#8a9b0f, #3b8686);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+.hexagon-4-point {
+  width: 200px;
+  aspect-ratio: cos(30deg);
+  margin-top: 50px;
+  background: radial-gradient(#8a9b0f, #3b8686);
+  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+}
