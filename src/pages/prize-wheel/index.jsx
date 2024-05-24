@@ -29,7 +29,7 @@ function PrizeWheel() {
 
     const interval = timeStamp - preTimeStamp.current;
 
-    if (interval < 80) {
+    if (interval < 60) {
       requestAnimationFrame(spinWheel);
       return;
     }

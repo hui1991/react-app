@@ -62,12 +62,12 @@ function Home() {
     return (
       <div
         key={index}
-        className="home-list-item"
+        className="list-item"
         onClick={() => {
           navigate(path);
         }}
       >
-        {content}
+        <div className="content">{content}</div>
       </div>
     );
   };
@@ -78,7 +78,11 @@ function Home() {
     );
   };
 
-  return <div className="home-layout">{renderHomeList()}</div>;
+  return (
+    <div className="home-page">
+      <div className="list-container">{renderHomeList()}</div>
+    </div>
+  );
 }
 
 export default Home;
