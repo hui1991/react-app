@@ -1,0 +1,28 @@
+.float-container {
+  .box {
+    background-color: rgb(224, 206, 247);
+    border: 5px solid rebeccapurple;
+    margin-top: 44px;
+
+    .float {
+      float: left;
+      height: 80px;
+      border: 1px solid black;
+      background: white;
+    }
+  }
+
+  .box1{
+    background-color: rgb(224, 206, 247);
+    border: 5px solid rebeccapurple;
+    margin-top: 44px;
+    display: flow-root;
+
+    .float1 {
+      float: left;
+      height: 80px;
+      border: 1px solid black;
+      background: white;
+    }
+  }
+}

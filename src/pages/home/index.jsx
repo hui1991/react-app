@@ -50,6 +50,10 @@ const homeList = [
     content: 'shape',
     path: '/clip-path-shape',
   },
+  {
+    content: 'float',
+    path: '/float',
+  },
 ];
 
 /**

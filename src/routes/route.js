@@ -12,6 +12,7 @@ import Modal from '../pages/modal/index';
 import PointerEvents from '../pages/pointer-events/index';
 import PrizeWheel from '../pages/prize-wheel/index';
 import ClipPathShape from '../pages/clip-path-shape/index';
+import Float from '../pages/float/index';
 
 const roots = [
   {
@@ -77,6 +78,11 @@ const roots = [
   {
     path: '/clip-path-shape',
     element: <ClipPathShape />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/float',
+    element: <Float />,
     errorElement: <ErrorPage />,
   },
 ];
