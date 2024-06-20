@@ -17,6 +17,8 @@ function Float() {
         <div className="float1">I am a floated box</div>
         <p>I am content inside the container清除浮动</p>
       </div>
+      <div className="box2"></div>
+      <div className="box2"></div>
     </div>
   );
 }

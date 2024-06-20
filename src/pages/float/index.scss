@@ -12,7 +12,7 @@
     }
   }
 
-  .box1{
+  .box1 {
     background-color: rgb(224, 206, 247);
     border: 5px solid rebeccapurple;
     margin-top: 44px;
@@ -24,5 +24,12 @@
       border: 1px solid black;
       background: white;
     }
+  }
+
+  .box2 {
+    width: 100px;
+    height: 100px;
+    margin: 50px 0;
+    background: cornflowerblue;
   }
 }
