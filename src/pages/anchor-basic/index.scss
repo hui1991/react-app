@@ -49,5 +49,6 @@
     position-anchor: --anchor-el-2;
     left: anchor(right);
     align-self: anchor-center;
+    width: calc(anchor-size(width) * 3);
   }
 }

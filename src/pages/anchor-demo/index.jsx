@@ -5,14 +5,12 @@ import './index.scss';
  * 锚点定位
  */
 function Anchor() {
-  
   useEffect(() => {
     dragElement(document.getElementById('anchor-el-one'));
     dragElement(document.getElementById('anchor-el-two'));
   }, []);
 
   const dragElement = (element) => {
-    console.log('element', element);
     let x = 0;
     let y = 0;
     let xOffset = 0;
