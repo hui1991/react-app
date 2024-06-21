@@ -59,6 +59,7 @@ function Anchor() {
       {insetAreaList?.map((item) => {
         return (
           <div
+            key={item?.key}
             className="inset-area-option"
             onClick={() => {
               onInsetAreaOptionClick(item);
@@ -71,7 +72,6 @@ function Anchor() {
       <div className="anchor-el-inset-area"></div>
       <div
         id="positioned-notice-inset-area"
-        key={key}
         style={{ insetArea: insetArea }}
         className="positioned-notice-inset-area"
       >
