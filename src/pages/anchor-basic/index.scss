@@ -1,0 +1,53 @@
+.anchor-container {
+  height: 100vh;
+  overflow-y: auto;
+
+  .anchor-el,
+  .anchor-el-1,
+  .anchor-el-2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background: url('../../assets/images/anchor.png');
+    background-size: 100%;
+  }
+
+  .positioned-notice,
+  .positioned-notice-1,
+  .positioned-notice-2 {
+    position: absolute;
+    margin-left: 15px;
+    background-color: #ccc;
+    padding: 4px;
+  }
+
+  .anchor-el {
+    anchor-name: --anchor-el;
+  }
+
+  .positioned-notice {
+    position-anchor: --anchor-el;
+    top: anchor(top);
+    left: anchor(right);
+  }
+
+  .anchor-el-1 {
+    anchor-name: --anchor-el-1;
+  }
+
+  .positioned-notice-1 {
+    top: anchor(--anchor-el-1 top);
+    left: anchor(--anchor-el-1 right);
+  }
+
+  .anchor-el-2 {
+    anchor-name: --anchor-el-2;
+  }
+
+  .positioned-notice-2 {
+    position-anchor: --anchor-el-2;
+    left: anchor(right);
+    align-self: anchor-center;
+  }
+}

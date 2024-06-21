@@ -13,6 +13,10 @@ import PointerEvents from '../pages/pointer-events/index';
 import PrizeWheel from '../pages/prize-wheel/index';
 import ClipPathShape from '../pages/clip-path-shape/index';
 import Float from '../pages/float/index';
+import AnchorBasic from '../pages/anchor-basic/index';
+import AnchorMulti from '../pages/anchor-multi/index';
+import AnchorInsetArea from '../pages/anchor-inset-area/index';
+import AnchorDemo from '../pages/anchor-demo/index';
 
 const roots = [
   {
@@ -83,6 +87,26 @@ const roots = [
   {
     path: '/float',
     element: <Float />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/anchor-basic',
+    element: <AnchorBasic />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/anchor-multi',
+    element: <AnchorMulti />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/anchor-inset-area',
+    element: <AnchorInsetArea />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/anchor-demo',
+    element: <AnchorDemo />,
     errorElement: <ErrorPage />,
   },
 ];

@@ -2,57 +2,73 @@ import { useNavigate } from 'react-router-dom';
 import './index.scss';
 
 const homeList = [
+  // {
+  //   content: '粘性布局',
+  //   path: '/sticky',
+  // },
+  // {
+  //   content: 'use-effect',
+  //   path: '/use-effect',
+  // },
+  // {
+  //   content: 'dropdown',
+  //   path: '/dropdown',
+  // },
+  // {
+  //   content: 'flex',
+  //   path: '/flex',
+  // },
+  // {
+  //   content: 'tab',
+  //   path: '/tab',
+  // },
+  // {
+  //   content: '居中',
+  //   path: '/center',
+  // },
+  // {
+  //   content: 'array',
+  //   path: '/array',
+  // },
+  // {
+  //   content: 'test',
+  //   path: '/test',
+  // },
+  // {
+  //   content: 'modal',
+  //   path: '/modal',
+  // },
+  // {
+  //   content: '滚动穿透',
+  //   path: '/pointerEvents',
+  // },
+  // {
+  //   content: '抽奖转盘',
+  //   path: '/prizeWheel',
+  // },
+  // {
+  //   content: 'shape',
+  //   path: '/clip-path-shape',
+  // },
+  // {
+  //   content: 'float',
+  //   path: '/float',
+  // },
   {
-    content: '粘性布局',
-    path: '/sticky',
+    content: 'anchor-basic',
+    path: '/anchor-basic',
   },
   {
-    content: 'use-effect',
-    path: '/use-effect',
+    content: 'anchor-multi',
+    path: '/anchor-multi',
   },
   {
-    content: 'dropdown',
-    path: '/dropdown',
+    content: 'anchor-inset-area',
+    path: '/anchor-inset-area',
   },
   {
-    content: 'flex',
-    path: '/flex',
-  },
-  {
-    content: 'tab',
-    path: '/tab',
-  },
-  {
-    content: '居中',
-    path: '/center',
-  },
-  {
-    content: 'array',
-    path: '/array',
-  },
-  {
-    content: 'test',
-    path: '/test',
-  },
-  {
-    content: 'modal',
-    path: '/modal',
-  },
-  {
-    content: '滚动穿透',
-    path: '/pointerEvents',
-  },
-  {
-    content: '抽奖转盘',
-    path: '/prizeWheel',
-  },
-  {
-    content: 'shape',
-    path: '/clip-path-shape',
-  },
-  {
-    content: 'float',
-    path: '/float',
+    content: 'anchor-demo',
+    path: '/anchor-demo',
   },
 ];
 

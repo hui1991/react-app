@@ -1,0 +1,27 @@
+.anchor-container {
+  height: 100vh;
+  overflow-y: auto;
+
+  .inset-area-option {
+    width: fit-content;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .anchor-el-inset-area {
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background: url('../../assets/images/anchor.png');
+    background-size: 100%;
+    anchor-name: --anchor-el-inset-area;
+  }
+
+  .positioned-notice-inset-area {
+    position: absolute;
+    position-anchor: --anchor-el-inset-area;
+  }
+}
