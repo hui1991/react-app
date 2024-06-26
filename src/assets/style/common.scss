@@ -6,7 +6,7 @@
 }
 
 // 单行省略号
-@mixin single-line-ellipse {
+@mixin single-line-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

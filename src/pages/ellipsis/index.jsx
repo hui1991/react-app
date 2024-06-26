@@ -4,9 +4,9 @@ import './index.scss';
 /**
  * 省略号
  */
-function Ellipse() {
+function Ellipsis() {
   return (
-    <div className="ellipse-container">
+    <div className="ellipsis-container">
       <div className="single-line">
         小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱小可爱
       </div>
@@ -14,4 +14,4 @@ function Ellipse() {
   );
 }
 
-export default Ellipse;
+export default Ellipsis;
