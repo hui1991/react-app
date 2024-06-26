@@ -18,6 +18,7 @@ import AnchorMulti from '../pages/anchor-multi/index';
 import AnchorInsetArea from '../pages/anchor-inset-area/index';
 import AnchorDemo from '../pages/anchor-demo/index';
 import GradientText from '../pages/gradient-text/index';
+import Ellipse from '../pages/ellipse/index';
 
 const roots = [
   {
@@ -113,6 +114,11 @@ const roots = [
   {
     path: '/gradient-text',
     element: <GradientText />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/ellipse',
+    element: <Ellipse />,
     errorElement: <ErrorPage />,
   },
 ];

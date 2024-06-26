@@ -74,6 +74,10 @@ const homeList = [
     content: 'gradient-text',
     path: '/gradient-text',
   },
+  {
+    content: 'ellipse',
+    path: '/ellipse',
+  },
 ];
 
 /**

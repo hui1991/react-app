@@ -1,0 +1,8 @@
+@import '../../assets/style/common.scss';
+
+.ellipse-container {
+  .single-line {
+    margin-top: 20px;
+    @include single-line-ellipse;
+  }
+}
