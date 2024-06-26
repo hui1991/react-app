@@ -70,6 +70,10 @@ const homeList = [
     content: 'anchor-demo',
     path: '/anchor-demo',
   },
+  {
+    content: 'gradient-text',
+    path: '/gradient-text',
+  },
 ];
 
 /**

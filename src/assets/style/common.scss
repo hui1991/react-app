@@ -1,0 +1,6 @@
+// 文字渐变
+@mixin gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

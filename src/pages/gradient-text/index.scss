@@ -1,0 +1,9 @@
+@import '../../assets/style/common.scss';
+
+.gradient-text-c {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  background: linear-gradient(blue, pink);
+  @include gradient-text;
+}

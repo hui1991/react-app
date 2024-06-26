@@ -17,6 +17,7 @@ import AnchorBasic from '../pages/anchor-basic/index';
 import AnchorMulti from '../pages/anchor-multi/index';
 import AnchorInsetArea from '../pages/anchor-inset-area/index';
 import AnchorDemo from '../pages/anchor-demo/index';
+import GradientText from '../pages/gradient-text/index';
 
 const roots = [
   {
@@ -107,6 +108,11 @@ const roots = [
   {
     path: '/anchor-demo',
     element: <AnchorDemo />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/gradient-text',
+    element: <GradientText />,
     errorElement: <ErrorPage />,
   },
 ];
