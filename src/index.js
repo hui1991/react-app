@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import roots from "./routes/route";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import roots from './routes/route';
+import { check_webp_feature } from './utils/utils';
 import './index.css';
-import 'normalize.css'
+import 'normalize.css';
+
+/**
+ * 检查是否支持webp
+ */
+check_webp_feature('lossy', function (isWebpSupported) {
+  console.log('isWebpSupported =',isWebpSupported)
+  if (!isWebpSupported) {
+    var htmlNode = document.querySelector('html');
+    htmlNode.setAttribute('class', 'webp_not_supported');
+  }
+});
 
 const router = createBrowserRouter(roots);
 
