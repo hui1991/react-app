@@ -3,8 +3,8 @@ import './index.scss';
 
 const homeList = [
   {
-    content: '粘性布局',
-    path: '/sticky',
+    content: '定位和布局',
+    path: '/layout',
   },
   {
     content: 'use-effect',
@@ -13,18 +13,6 @@ const homeList = [
   {
     content: 'dropdown',
     path: '/dropdown',
-  },
-  {
-    content: 'flex',
-    path: '/flex',
-  },
-  {
-    content: 'tab',
-    path: '/tab',
-  },
-  {
-    content: '居中',
-    path: '/center',
   },
   {
     content: 'array',
@@ -49,26 +37,6 @@ const homeList = [
   {
     content: 'shape',
     path: '/clip-path-shape',
-  },
-  {
-    content: 'float',
-    path: '/float',
-  },
-  {
-    content: 'anchor-basic',
-    path: '/anchor-basic',
-  },
-  {
-    content: 'anchor-multi',
-    path: '/anchor-multi',
-  },
-  {
-    content: 'anchor-inset-area',
-    path: '/anchor-inset-area',
-  },
-  {
-    content: 'anchor-demo',
-    path: '/anchor-demo',
   },
   {
     content: 'gradient-text',

@@ -19,6 +19,7 @@ import AnchorInsetArea from '../pages/anchor-inset-area/index';
 import AnchorDemo from '../pages/anchor-demo/index';
 import GradientText from '../pages/gradient-text/index';
 import Ellipsis from '../pages/ellipsis/index';
+import Layout from '../pages/layout/index';
 
 const roots = [
   {
@@ -26,11 +27,61 @@ const roots = [
     element: <Home />,
     errorElement: <ErrorPage />,
   },
+
+  // layout
   {
-    path: '/sticky',
+    path: '/layout',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/center',
+    element: <Center />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/sticky',
     element: <Sticky />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: '/layout/flex',
+    element: <Flex />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/tab',
+    element: <TabDemo />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/float',
+    element: <Float />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/anchor-basic',
+    element: <AnchorBasic />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/anchor-multi',
+    element: <AnchorMulti />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/anchor-inset-area',
+    element: <AnchorInsetArea />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/layout/anchor-demo',
+    element: <AnchorDemo />,
+    errorElement: <ErrorPage />,
+  },
+
+
+
   {
     path: '/use-effect',
     element: <UseEffectTest />,
@@ -42,23 +93,8 @@ const roots = [
     errorElement: <ErrorPage />,
   },
   {
-    path: '/flex',
-    element: <Flex />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/tab',
-    element: <TabDemo />,
-    errorElement: <ErrorPage />,
-  },
-  {
     path: '/array',
     element: <Array />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/center',
-    element: <Center />,
     errorElement: <ErrorPage />,
   },
   {
@@ -84,31 +120,6 @@ const roots = [
   {
     path: '/clip-path-shape',
     element: <ClipPathShape />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/float',
-    element: <Float />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/anchor-basic',
-    element: <AnchorBasic />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/anchor-multi',
-    element: <AnchorMulti />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/anchor-inset-area',
-    element: <AnchorInsetArea />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/anchor-demo',
-    element: <AnchorDemo />,
     errorElement: <ErrorPage />,
   },
   {
