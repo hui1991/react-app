@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import List from '@/components/list';
 import './index.scss';
 
 const layoutList = [
@@ -41,34 +42,12 @@ const layoutList = [
 ];
 
 /**
- * 布局
+ * 定位和布局
  */
 const Layout = () => {
-  const navigate = useNavigate();
-
-  const renderItem = (content, path, index) => {
-    return (
-      <div
-        key={index}
-        className="list-item"
-        onClick={() => {
-          navigate(path);
-        }}
-      >
-        <div className="content">{content}</div>
-      </div>
-    );
-  };
-
-  const renderHomeList = () => {
-    return layoutList.map((item, index) =>
-      renderItem(item?.content, item?.path, index)
-    );
-  };
-
   return (
     <div className="layout-page">
-      <div className="list-container">{renderHomeList()}</div>
+      <List data={layoutList}></List>
     </div>
   );
 };

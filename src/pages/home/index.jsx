@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import List from '@/components/list';
 import './index.scss';
 
 const homeList = [
@@ -52,31 +53,9 @@ const homeList = [
  * 首页
  */
 function Home() {
-  const navigate = useNavigate();
-
-  const renderItem = (content, path, index) => {
-    return (
-      <div
-        key={index}
-        className="list-item"
-        onClick={() => {
-          navigate(path);
-        }}
-      >
-        <div className="content">{content}</div>
-      </div>
-    );
-  };
-
-  const renderHomeList = () => {
-    return homeList.map((item, index) =>
-      renderItem(item?.content, item?.path, index)
-    );
-  };
-
   return (
     <div className="home-page">
-      <div className="list-container">{renderHomeList()}</div>
+      <List data={homeList}></List>
     </div>
   );
 }
